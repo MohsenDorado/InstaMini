@@ -9,6 +9,12 @@ import { MdAddAPhoto } from "react-icons/md";
 import { MdClose } from "react-icons/md";
 import { app } from "@/firebase";
 import {
+  addDoc,
+  collection,
+  getFirestore,
+  serverTimestamp,
+} from "firebase/firestore";
+import {
   getDownloadURL,
   getStorage,
   ref,
@@ -20,7 +26,10 @@ export default function Header() {
   const [selectedFile, setSelectedFile] = useState(null);
   const [imageFileUrl, setImageFileUrl] = useState(null);
   const [imageFileUploading, setImageFileUploading] = useState(false);
-
+  const [postUploading, setPostUploading] = useState(false);
+  const [caption, setCaption] = useState("");
+  const filePickerRef = useRef();
+  const db = getFirestore(app);
   async function uploadImageToStorage() {
     setImageFileUploading(true);
     const storage = getStorage(app);
@@ -54,7 +63,6 @@ export default function Header() {
     }
   }, [selectedFile]);
 
-  const filePickerRef = useRef();
   function addImageToPost(e) {
     const file = e.target.files[0];
     if (file) {
@@ -62,6 +70,18 @@ export default function Header() {
       setImageFileUrl(URL.createObjectURL(file));
       console.log(imageFileUrl);
     }
+  }
+  async function handleSubmit() {
+    setPostUploading(true);
+    const docRef = await addDoc(collection(db, "posts"), {
+      username: session.user.username,
+      caption,
+      profileImg: session.user.image,
+      image: imageFileUrl,
+      timestamp: serverTimestamp(),
+    });
+    setPostUploading(false);
+    setIsOpen(false);
   }
   return (
     <div className="shadow-sm border-b sticky top-0 bg-white z-auto">
@@ -121,7 +141,9 @@ export default function Header() {
               <img
                 src={imageFileUrl}
                 alt="selected photo"
-                className={`w-full m-h-[250px] object-cover cursor-pointer flex justify-center items-center ${imageFileUploading? "animate-pulse" :""}`}
+                className={`w-full m-h-[250px] object-cover cursor-pointer flex justify-center items-center ${
+                  imageFileUploading ? "animate-pulse" : ""
+                }`}
                 onClick={() => setSelectedFile(null)}
               />
             ) : (
@@ -144,8 +166,18 @@ export default function Header() {
               type="text"
               maxLength="150"
               placeholder="Enter caption here"
+              onChange={(e) => setCaption(e.target.value)}
             />
-            <button className="w-full bg-blue-300 rounded-xl text-white p-2 shadow-md hover:brightness-105 disabled:bg-gray-200 disabled:cursor-not-allowed">
+            <button
+              disabled={
+                !selectedFile ||
+                !caption.trim() === "" ||
+                postUploading ||
+                imageFileUploading
+              }
+              onClick={handleSubmit}
+              className="w-full bg-blue-300 rounded-xl text-white p-2 shadow-md hover:brightness-105 disabled:bg-gray-200 disabled:cursor-not-allowed"
+            >
               Upload post
             </button>
             <MdClose
