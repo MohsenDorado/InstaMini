@@ -82,6 +82,8 @@ export default function Header() {
     });
     setPostUploading(false);
     setIsOpen(false);
+    location.reload();
+
   }
   return (
     <div className="shadow-sm border-b sticky top-0 bg-white z-auto">

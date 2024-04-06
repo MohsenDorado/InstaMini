@@ -5,7 +5,7 @@ export default function MiniProfile() {
   const { data: session } = useSession();
 
   return (
-    <div className="flex items-center justify-between mt-14 ml-10 ">
+    <div className="flex items-center justify-between mt-14 ml-10 w-full">
       <img
         className="rounded-full w-16 h-16 border p-[2px]"
         src={session?.user?.image || "800px-Instagram_logo_2016.webp"}
@@ -17,7 +17,7 @@ export default function MiniProfile() {
       </div>
       {session ? (
         <button
-          className="text-red-500 text-sm font-semibold hover:brightness-150"
+          className="text-red-500 text-sm font-semibold hover:brightness-150 "
           onClick={signOut}
         >Signout</button>
       ) : (
