@@ -1,0 +1,246 @@
+[debug] [2024-04-07T13:12:45.943Z] ----------------------------------------------------------------------
+[debug] [2024-04-07T13:12:45.946Z] Command:       C:\Users\MnM\AppData\Roaming\npm\node.exe C:\Users\MnM\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-04-07T13:12:45.947Z] CLI Version:   13.7.1
+[debug] [2024-04-07T13:12:45.947Z] Platform:      win32
+[debug] [2024-04-07T13:12:45.948Z] Node Version:  v20.11.1
+[debug] [2024-04-07T13:12:45.948Z] Time:          Sun Apr 07 2024 16:42:45 GMT+0330 (Iran Standard Time)
+[debug] [2024-04-07T13:12:45.948Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-07T13:12:46.033Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-07T13:12:46.034Z] > authorizing via signed-in user (www.mking3000@gmail.com)
+[debug] [2024-04-07T13:12:46.034Z] [iam] checking project instaminiclone for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-04-07T13:12:46.036Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/instaminiclone:testIamPermissions [none]
+[debug] [2024-04-07T13:12:46.037Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/instaminiclone:testIamPermissions x-goog-quota-user=projects/instaminiclone
+[debug] [2024-04-07T13:12:46.037Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/instaminiclone:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-04-07T13:12:47.471Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/instaminiclone:testIamPermissions 200
+[debug] [2024-04-07T13:12:47.472Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/instaminiclone:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-04-07T13:12:47.474Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/instaminiclone [none]
+[debug] [2024-04-07T13:12:48.429Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/instaminiclone 200
+[debug] [2024-04-07T13:12:48.431Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/instaminiclone {"projectId":"instaminiclone","projectNumber":"947297760568","displayName":"instaminiclone","name":"projects/instaminiclone","resources":{"hostingSite":"instaminiclone","storageBucket":"instaminiclone.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_9ed744e2-d76c-4d15-8f12-2092afc18a06"}
+[debug] [2024-04-07T13:12:52.293Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/instaminiclone/sites pageToken=&pageSize=10
+[debug] [2024-04-07T13:12:55.352Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/instaminiclone/sites 200
+[debug] [2024-04-07T13:12:55.352Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/instaminiclone/sites {"sites":[{"name":"projects/instaminiclone/sites/instaminiclone","defaultUrl":"https://instaminiclone.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-04-07T13:12:55.353Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/instaminiclone/sites 
+[debug] [2024-04-07T13:12:55.861Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/instaminiclone/sites 200
+[debug] [2024-04-07T13:12:55.861Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/instaminiclone/sites {"sites":[{"name":"projects/instaminiclone/sites/instaminiclone","defaultUrl":"https://instaminiclone.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-04-07T13:12:55.862Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/instaminiclone/webApps/-/config [none]
+[debug] [2024-04-07T13:12:57.421Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/instaminiclone/webApps/-/config 200
+[debug] [2024-04-07T13:12:57.422Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/instaminiclone/webApps/-/config {"projectId":"instaminiclone","appId":"1:947297760568:web:7f549a60b175bc8955fdcd","storageBucket":"instaminiclone.appspot.com","locationId":"us-central","apiKey":"AIzaSyAzL1Mz5OODdVDPW878B5vyNL4HyEUUFw4","authDomain":"instaminiclone.firebaseapp.com","messagingSenderId":"947297760568"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-04-07T13:13:05.658Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/instaminiclone/sites/instaminiclone [none]
+[debug] [2024-04-07T13:13:07.568Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/instaminiclone/sites/instaminiclone 200
+[debug] [2024-04-07T13:13:07.569Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/instaminiclone/sites/instaminiclone {"name":"projects/instaminiclone/sites/instaminiclone","defaultUrl":"https://instaminiclone.web.app","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 14.1.4
+
+[info]    - Environments: .env
+
+
+[info]    Creating an optimized production build ...
+
+[info] Compiler server unexpectedly exited with code: null and signal: SIGTERM
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info] 
+./src/components/CommentSection.jsx
+45:6  Warning: React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+56:15  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+76:11  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./src/components/Header.jsx
+64:6  Warning: React Hook useEffect has a missing dependency: 'uploadImageToStorage'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+118:13  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+143:15  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./src/components/LikeSection.jsx
+26:6  Warning: React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+34:6  Warning: React Hook useEffect has a missing dependency: 'session?.user?.uid'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/components/MiniProfile.jsx
+9:7  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./src/components/Post.jsx
+8:9  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+16:7  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+
+[info]    Collecting page data ...
+
+[info]    Generating static pages (0/5) ...
+
+[info]    Generating static pages (1/5) 
+
+[info]    Generating static pages (2/5) 
+
+[info]    Generating static pages (3/5) 
+
+[info]  ✓ Generating static pages (5/5) 
+
+[info]    Finalizing page optimization ...
+
+[info]    Collecting build traces ...
+
+[info] 
+
+[info] Route (app)                              Size     First Load JS
+┌ ○ /                                    29.1 kB         205 kB
+├ ○ /_not-found                          882 B          85.3 kB
+└ λ /api/auth/[...nextauth]              0 B                0 B
++ First Load JS shared by all            84.4 kB
+  ├ chunks/69-dfeebb654ae3e80a.js        29 kB
+  ├ chunks/fd9d1056-c774b334530e9a3b.js  53.4 kB
+  └ other shared chunks (total)          2.01 kB
+
+
+[info] 
+○  (Static)   prerendered as static content
+λ  (Dynamic)  server-rendered on demand using Node.js
+
+
+[info] Building a Cloud Function to run this application. This is needed due to:
+[info]  • non-static component /api/auth/[...nextauth]/route
+[info] 
+[debug] [2024-04-07T13:16:59.759Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/instaminiclone/sites/instaminiclone [none]
+[debug] [2024-04-07T13:17:01.222Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/instaminiclone/sites/instaminiclone 200
+[debug] [2024-04-07T13:17:01.222Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/instaminiclone/sites/instaminiclone {"name":"projects/instaminiclone/sites/instaminiclone","defaultUrl":"https://instaminiclone.web.app","type":"DEFAULT_SITE"}
+[debug] [2024-04-07T13:17:02.298Z] Error: Source and destination must not be the same.
+    at C:\Users\MnM\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\util\stat.js:49:19
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-04-07T13:18:32.494Z] ----------------------------------------------------------------------
+[debug] [2024-04-07T13:18:32.497Z] Command:       C:\Users\MnM\AppData\Roaming\npm\node.exe C:\Users\MnM\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-04-07T13:18:32.498Z] CLI Version:   13.7.1
+[debug] [2024-04-07T13:18:32.498Z] Platform:      win32
+[debug] [2024-04-07T13:18:32.498Z] Node Version:  v20.11.1
+[debug] [2024-04-07T13:18:32.498Z] Time:          Sun Apr 07 2024 16:48:32 GMT+0330 (Iran Standard Time)
+[debug] [2024-04-07T13:18:32.498Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-07T13:18:32.611Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-07T13:18:32.612Z] > authorizing via signed-in user (www.mking3000@gmail.com)
+[debug] [2024-04-07T13:18:32.612Z] [iam] checking project instaminiclone for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-04-07T13:18:32.614Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/instaminiclone:testIamPermissions [none]
+[debug] [2024-04-07T13:18:32.615Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/instaminiclone:testIamPermissions x-goog-quota-user=projects/instaminiclone
+[debug] [2024-04-07T13:18:32.615Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/instaminiclone:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-04-07T13:18:34.199Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/instaminiclone:testIamPermissions 200
+[debug] [2024-04-07T13:18:34.200Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/instaminiclone:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-04-07T13:18:34.201Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/instaminiclone [none]
+[debug] [2024-04-07T13:18:35.080Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/instaminiclone 200
+[debug] [2024-04-07T13:18:35.081Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/instaminiclone {"projectId":"instaminiclone","projectNumber":"947297760568","displayName":"instaminiclone","name":"projects/instaminiclone","resources":{"hostingSite":"instaminiclone","storageBucket":"instaminiclone.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_9ed744e2-d76c-4d15-8f12-2092afc18a06"}
+[debug] [2024-04-07T13:18:39.534Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/instaminiclone/sites pageToken=&pageSize=10
+[debug] [2024-04-07T13:18:41.018Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/instaminiclone/sites 200
+[debug] [2024-04-07T13:18:41.019Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/instaminiclone/sites {"sites":[{"name":"projects/instaminiclone/sites/instaminiclone","defaultUrl":"https://instaminiclone.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-04-07T13:18:41.022Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/instaminiclone/sites 
+[debug] [2024-04-07T13:18:42.017Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/instaminiclone/sites 200
+[debug] [2024-04-07T13:18:42.018Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/instaminiclone/sites {"sites":[{"name":"projects/instaminiclone/sites/instaminiclone","defaultUrl":"https://instaminiclone.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-04-07T13:18:42.018Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/instaminiclone/webApps/-/config [none]
+[debug] [2024-04-07T13:18:44.183Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/instaminiclone/webApps/-/config 200
+[debug] [2024-04-07T13:18:44.183Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/instaminiclone/webApps/-/config {"projectId":"instaminiclone","appId":"1:947297760568:web:7f549a60b175bc8955fdcd","storageBucket":"instaminiclone.appspot.com","locationId":"us-central","apiKey":"AIzaSyAzL1Mz5OODdVDPW878B5vyNL4HyEUUFw4","authDomain":"instaminiclone.firebaseapp.com","messagingSenderId":"947297760568"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-04-07T13:18:52.331Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/instaminiclone/sites/instaminiclone [none]
+[debug] [2024-04-07T13:18:53.973Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/instaminiclone/sites/instaminiclone 200
+[debug] [2024-04-07T13:18:53.974Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/instaminiclone/sites/instaminiclone {"name":"projects/instaminiclone/sites/instaminiclone","defaultUrl":"https://instaminiclone.web.app","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 14.1.4
+
+[info]    - Environments: .env
+
+
+[info]    Creating an optimized production build ...
+
+[info] Compiler server unexpectedly exited with code: null and signal: SIGTERM
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info] 
+./src/components/CommentSection.jsx
+45:6  Warning: React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+56:15  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+76:11  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./src/components/Header.jsx
+64:6  Warning: React Hook useEffect has a missing dependency: 'uploadImageToStorage'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+118:13  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+143:15  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./src/components/LikeSection.jsx
+26:6  Warning: React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+34:6  Warning: React Hook useEffect has a missing dependency: 'session?.user?.uid'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/components/MiniProfile.jsx
+9:7  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./src/components/Post.jsx
+8:9  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+16:7  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+
+[info]    Collecting page data ...
+
+[info]    Generating static pages (0/5) ...
+
+[info]    Generating static pages (1/5) 
+
+[info]    Generating static pages (2/5) 
+
+[info]    Generating static pages (3/5) 
+
+[info]  ✓ Generating static pages (5/5) 
+
+[info]    Finalizing page optimization ...
+
+[info]    Collecting build traces ...
+
+[info] 
+
+[info] Route (app)                              Size     First Load JS
+┌ ○ /                                    29.1 kB         205 kB
+├ ○ /_not-found                          882 B          85.3 kB
+└ λ /api/auth/[...nextauth]              0 B                0 B
++ First Load JS shared by all            84.4 kB
+  ├ chunks/69-dfeebb654ae3e80a.js        29 kB
+  ├ chunks/fd9d1056-c774b334530e9a3b.js  53.4 kB
+  └ other shared chunks (total)          2.01 kB
+
+
+[info] 
+○  (Static)   prerendered as static content
+λ  (Dynamic)  server-rendered on demand using Node.js
+
+
+[info] Building a Cloud Function to run this application. This is needed due to:
+[info]  • non-static component /api/auth/[...nextauth]/route
+[info] 
+[debug] [2024-04-07T13:19:56.212Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/instaminiclone/sites/instaminiclone [none]
+[debug] [2024-04-07T13:19:57.547Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/instaminiclone/sites/instaminiclone 200
+[debug] [2024-04-07T13:19:57.547Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/instaminiclone/sites/instaminiclone {"name":"projects/instaminiclone/sites/instaminiclone","defaultUrl":"https://instaminiclone.web.app","type":"DEFAULT_SITE"}
+[debug] [2024-04-07T13:19:58.117Z] Error: Source and destination must not be the same.
+    at C:\Users\MnM\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\util\stat.js:49:19
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+[error] 
+[error] Error: An unexpected error has occurred.
