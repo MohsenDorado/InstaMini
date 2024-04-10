@@ -61,7 +61,7 @@ export default function CommentSection({ id }) {
               <p className='text-sm flex-1 truncate'>
                 <span className='font-bold text-gray-700'>
                   {comment.data().username}
-                </span>{' '}
+                </span>
                 {comment.data().comment}
               </p>
               <Moment fromNow className='text-xs text-gray-400 pr-2'>
