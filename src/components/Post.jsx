@@ -4,7 +4,7 @@ import CommentSection from './CommentSection';
 
 export default function Post({ post }) {
   return (
-    <div className='bg-white my-7 border rounded-md'>
+    <div className='bg-white my-7 border rounded-md transition duration-200 ease-in-out'>
       <div className='flex items-center p-5 border-b border-gray-100'>
         <img
           src={post.profileImg}
